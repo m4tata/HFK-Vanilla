@@ -1,0 +1,9 @@
+{
+  "inBattleExpAll": true,
+  "inBattleExpMultiplier": 0.25,
+  "inBattleGrantEvs": true,
+  "outOfBattleExpAll": true,
+  "outOfBattleExpMultiplier": 0.25,
+  "outOfBattleGrantEvs": true,
+  "debug": false
+}

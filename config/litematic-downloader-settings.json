@@ -1,0 +1,12 @@
+{
+  "downloadPath": "schematics",
+  "successToastsEnabled": false,
+  "errorToastsEnabled": true,
+  "infoToastsEnabled": false,
+  "warningToastsEnabled": true,
+  "sortOption": "newest",
+  "itemsPerPage": 20,
+  "tagFilter": "",
+  "excludedVendors": "",
+  "dismissedModMessageId": -1
+}

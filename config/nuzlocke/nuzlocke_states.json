@@ -1,0 +1,124 @@
+{
+  "0e98fb84-1d60-472d-a715-a110055af290": {
+    "playerId": "0e98fb84-1d60-472d-a715-a110055af290",
+    "active": true,
+    "startTimestamp": 1769964398430,
+    "deadPokemon": [
+      "13639df9-63fc-4298-8f4e-e21f54a309de",
+      "c71265dc-31e0-46a7-b65d-a3775dec7a6a",
+      "f9941cbc-55c9-454e-852c-11841ab59258",
+      "429c7b0a-f06d-42e8-a94c-7ebb2a27f1cf",
+      "db7101c2-8504-41bb-8909-ae2ad76c5636",
+      "9e4ed178-5114-4be1-960a-63e00cf5f4d8",
+      "f3ed67b6-7554-4bba-a2ae-1e2f6f1103a3",
+      "139765e7-53e1-4fbe-9455-10f5f32b8cd1",
+      "03ad1fdb-c69d-4434-a774-9c79a5003ae0",
+      "440a7163-bf59-4a2b-b081-c2d32d6f9626",
+      "79699043-5827-4d4a-a250-8ebc91ec8810",
+      "6bd9f998-8ddf-4473-a2ef-e0751217cf23",
+      "d49c5a82-eecd-4269-bba9-da9832eb69b8",
+      "3f315778-c1ba-4b98-8259-9847b00d328b",
+      "784b9c71-fa86-4e4e-940f-5d00073bcf38",
+      "db746860-236e-4e89-b7fe-cf53f15bb86c"
+    ],
+    "graveyard": {
+      "13639df9-63fc-4298-8f4e-e21f54a309de": {
+        "nickname": "Infernape",
+        "species": "Infernape",
+        "level": 13,
+        "deathTimestamp": 1769964554425
+      },
+      "c71265dc-31e0-46a7-b65d-a3775dec7a6a": {
+        "nickname": "Chimchar",
+        "species": "Chimchar",
+        "level": 1,
+        "deathTimestamp": 1769964468676
+      },
+      "f9941cbc-55c9-454e-852c-11841ab59258": {
+        "nickname": "Swanna",
+        "species": "Swanna",
+        "level": 1,
+        "deathTimestamp": 1769964592875
+      },
+      "429c7b0a-f06d-42e8-a94c-7ebb2a27f1cf": {
+        "nickname": "Lapras",
+        "species": "Lapras",
+        "level": 1,
+        "deathTimestamp": 1769965390425
+      },
+      "db7101c2-8504-41bb-8909-ae2ad76c5636": {
+        "nickname": "Golisopod",
+        "species": "Golisopod",
+        "level": 31,
+        "deathTimestamp": 1769970954022
+      },
+      "9e4ed178-5114-4be1-960a-63e00cf5f4d8": {
+        "nickname": "Chimecho",
+        "species": "Chimecho",
+        "level": 45,
+        "deathTimestamp": 1769972133042
+      },
+      "f3ed67b6-7554-4bba-a2ae-1e2f6f1103a3": {
+        "nickname": "Alakazam",
+        "species": "Alakazam",
+        "level": 1,
+        "deathTimestamp": 1769997419701
+      },
+      "139765e7-53e1-4fbe-9455-10f5f32b8cd1": {
+        "nickname": "Crabominable",
+        "species": "Crabominable",
+        "level": 1,
+        "deathTimestamp": 1770987120495
+      },
+      "03ad1fdb-c69d-4434-a774-9c79a5003ae0": {
+        "nickname": "Espathra",
+        "species": "Espathra",
+        "level": 1,
+        "deathTimestamp": 1772034653044
+      },
+      "440a7163-bf59-4a2b-b081-c2d32d6f9626": {
+        "nickname": "Solosis",
+        "species": "Solosis",
+        "level": 14,
+        "deathTimestamp": 1772130497517
+      },
+      "79699043-5827-4d4a-a250-8ebc91ec8810": {
+        "nickname": "Pawmi",
+        "species": "Pawmi",
+        "level": 22,
+        "deathTimestamp": 1772130958557
+      },
+      "6bd9f998-8ddf-4473-a2ef-e0751217cf23": {
+        "nickname": "Abomasnow",
+        "species": "Abomasnow",
+        "level": 1,
+        "deathTimestamp": 1772162197407
+      },
+      "d49c5a82-eecd-4269-bba9-da9832eb69b8": {
+        "nickname": "Nymble",
+        "species": "Nymble",
+        "level": 6,
+        "deathTimestamp": 1772400526049
+      },
+      "3f315778-c1ba-4b98-8259-9847b00d328b": {
+        "nickname": "Wooloo",
+        "species": "Wooloo",
+        "level": 5,
+        "deathTimestamp": 1772400639399
+      },
+      "784b9c71-fa86-4e4e-940f-5d00073bcf38": {
+        "nickname": "Charizard",
+        "species": "Charizard",
+        "level": 31,
+        "deathTimestamp": 1772641425802
+      },
+      "db746860-236e-4e89-b7fe-cf53f15bb86c": {
+        "nickname": "Charizard",
+        "species": "Charizard",
+        "level": 100,
+        "deathTimestamp": 1772847411943
+      }
+    },
+    "totalDeaths": 16
+  }
+}

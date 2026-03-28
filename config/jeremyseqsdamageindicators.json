@@ -1,0 +1,15 @@
+{
+  "enableDirectionalIndicator": true,
+  "directionalIndicatorTexture": 0,
+  "directionalIndicatorDistance": 0,
+  "directionalIndicatorR": 206,
+  "directionalIndicatorG": 0,
+  "directionalIndicatorB": 37,
+  "directionalIndicatorA": 255,
+  "enableFadeOut": true,
+  "indicateTime": 25,
+  "enableDamageText": false,
+  "enableHealthBars": false,
+  "onlyShowTargetHealthBar": true,
+  "enableBloodOverlay": false
+}

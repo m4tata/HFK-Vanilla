@@ -1,0 +1,6 @@
+{
+  "permaDeathRule": true,
+  "announceDeaths": true,
+  "deathMessage": "§7%player%\u0027s §c%pokemon%§7 has fallen in battle...",
+  "deathHandling": "RELEASE"
+}
