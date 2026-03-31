@@ -1,0 +1,7 @@
+{
+	containerBlockToggles: {},
+	craftingPlayerCanReach: true,
+	craftingPlayerReach: 8,
+	craftingTableCanReach: true,
+	craftingTableReach: 8
+}

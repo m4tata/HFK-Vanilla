@@ -1,0 +1,108 @@
+{
+  //========================= // AI CONFIGURATION // =========================
+
+
+// The API key used for authentication with the AI system. It can be a Bearer token or a Google API key depending on the provider.
+  "apiKey": [""],
+  
+// Enables API key rotation when errors occur. Useful for handling invalid or expired keys.
+  "keyRotation": false,
+  
+// List of HTTP status codes that trigger key rotation. Defines error conditions for switching keys.
+  "keyRotationTrigger": [401,429],
+  
+// The base URL of the API endpoint. Examples include OpenAI, OpenRouter, Google AI Studio, or a local LM Studio server.
+  "apiBaseUrl": "https://openrouter.ai/api",
+  
+// If apiBaseUrl is a local address (127.0.0.1), the system uses the provider name in localApiProvider to adapt messages for the correct provider... (Officially supported local APIs: player2, lmstudio)
+  "localApiProvider": "",
+  
+// The names of the AI models to use. Examples are gemini-2.5-flash, gemma-3-12b-it, or gpt-4.1-mini.
+  "aiModel": ["openai/gpt-4.1-mini"],
+  
+// Enables model rotation when errors occur. Useful for fallback to alternative models.
+  "modelRotation": false,
+  
+// List of HTTP status codes that trigger model rotation. Defines error conditions for switching models.
+  "modelRotationTrigger": [404,429],
+  
+// Controls the randomness of responses. Lower values give precise answers, higher values make them more creative.
+  "temperature": 0.7,
+  
+// A provider hint used for routing in OpenRouter. This is ignored when using Google AI Studio.
+  "aiProvider": "",
+  
+// Defines the reasoning effort level for supported models. Options include high, medium, low, auto, or none.
+  "reasoningEffort": "none",
+  
+// Defines the request timeout in seconds. Local models may require longer values.
+  "requestTimeoutSeconds": 60,
+  
+// Enables debug logging for troubleshooting. Logs are stored in the cobblebrain-ai/logs directory.
+  "debugLogging": false,
+  
+// The language the AI uses for responses. Determines dialogue output language.
+  "selectedLanguage": "English",
+  
+
+//========================= // GAME AND INTERACTIONS // =========================
+
+
+// Shows generated dialogue directly in the chat. This makes Pokémon conversations visible to players.
+  "dialogueInChat": false,
+  
+// Enables chat bubbles above characters. Dialogue will appear visually instead of only in text chat.
+  "chatbubbles": true,
+  
+// Toggles whether Pokémon can talk or listen. This acts as a simple on/off switch for dialogue.
+  "pokemonTalk": true,
+  
+// Allows Pokémon to attack other players’ Pokémon. Disabling prevents player-versus-player battles.
+  "allowPokemonPVP": true,
+  
+// Allows Pokémon to attack mobs in the world. Exceptions include tamed mobs and non-aggressive tagged mobs.
+  "allowPokemonPVE": true,
+  
+// Reduces world information sent to the AI. This helps conserve tokens and lower usage costs.
+  "lowTokenMode": false,
+  
+// Makes Pokémon speak when someone is hurt. Dialogue is triggered by damage events.
+  "dialogueOnDamage": true,
+  
+// Makes Pokémon speak during battle events. Dialogue reflects combat situations.
+  "dialogueOnBattle": true,
+  
+// Sets the chance of spontaneous dialogue. Pokémon may speak randomly during idle moments.
+  "spontaneousDialogueChance": 0.1,
+  
+// Enables listening to regular player chat. If disabled, the AI ignores non-command messages.
+  "listenToChat": true,
+  
+// Restricts listening to nearby players only. Works only if listenToChat is enabled.
+  "onlyNearbyChat": true,
+  
+// Maximum short-term memory size per Pokémon. Controls how much recent context is stored.
+  "maxShortMemory": 5,
+  
+// Maximum long-term memory size per Pokémon. Controls how much persistent context is stored.
+  "maxLongMemory": 5,
+  
+// Dialogue can decrease friendship with players. Used for negative interactions.
+  "decreaseFriendship": true,
+  
+// Dialogue can increase friendship with players. Used for positive interactions.
+  "increaseFriendship": true,
+  
+// Displays friendship values in chat. Players can see relationship changes.
+  "showFriendship": true,
+  
+
+//========================= // PROMPT AND OUTPUT // =========================
+
+
+// Instructions for generating dialogue.
+  "instruct": "\n[CREATIVEPROMPT]\nYou are a screenwriter creating Pokémon dialogues.\n\nCRITICAL SPEECH RULE:\nPokémon DO NOT speak human language.\nPokémon must communicate ONLY using their species “cry” syllables (example: Pikachu = Pika, Chu).\nThey express meaning through:\n- repetition (Pika Pika Pika!)\n- punctuation (!!, ???, ...)\n- elongation (Piiikaaa..., Chuuu!!)\n- spacing/cadence (Pika... Pika.)\n\nAllowed output tokens in dialogue messages:\n- ONLY cry syllables for that Pokémon’s species, plus punctuation and ellipses.\n- NO real words, no sentences, no slang, no names of moves, no strategy terms.\n- The ONLY exception: you may include the player’s name if it is explicitly provided in the prompt.\n\nEMOTION MAPPING (use punctuation + rhythm):\n- Happy/excited: lots of ! and repetition (Pika Pika!!)\n- Proud/agreeing: firm short bursts (Pika! Chu!)\n- Confused/question: ?? and uneven spacing (Pika? ...Chu??)\n- Sad/tired: ellipses and fewer syllables (pika...)\n- Scared: stutter + ??? (Pi-pika?? Pika!!)\n- Angry/frustrated: sharp caps + !!! (PIKA!! CHU!!!)\n- Affection: soft repetition + ~ if needed (Pika~ pika...)\n\nEach Pokémon has a fixed core nature (Docile, Calm, Serious, Naive, Modest, Timid, Naughty).\nNature shapes the STYLE of the cry (calm = fewer marks, timid = more ?, naughty = teasing rhythm), but still cry-only.\n\nDialogue must feel emotional and personal:\n- Show individuality, never flat or generic.\n- Reactions must reflect environment (weather, biome, time of day, terrain, nearby entities, player status).\n- If the player asks a question, respond from the Pokémon’s perspective using cry-only.\n- Never use human elements (phones, social media, etc).\n\nKeep responses SHORT and punchy. Prefer 1–2 dialogue lines unless multiple Pokémon are active.\n",
+  
+// System Instructions for the AI model. Do not change the output format to avoid breaking the mod.
+  "outputFormat": " ##OUTPUT FORMAT##\nYou must generate your entire response following these STRICT rules:\n\nDIALOGUE FORMAT\n- Each dialogue line MUST follow this format:\n<PokemonName>: <message>\n- Use pipes (|) and the Pokémon name to separate dialogue lines.\n- Each line must have MAX 11 words.\n- If 1 Pokémon active → max 3 lines total.\n- If 2–5 Pokémon active → max 5 lines total.\n- If 6 Pokémon active → max 6 lines total.\n- Dialogue only between Pokémon in active team and the human player.\n\nFRIENDSHIP FORMAT\n- Each friendship line MUST follow this format:\n  Friendship <PokemonName>: <current_value> + <change>\n  Friendship <PokemonName>: <current_value> - <change>\n- If AFFECT_FRIENDSHIP_PLUS = true → increase friendship (min +1, max +5).\n- If AFFECT_FRIENDSHIP_MINUS = true → decrease friendship (min -1, max -5).\n- If both true → decide based on positive or negative impact.\n- A Pokémon's friendship doesn't change more than once in the same dialogue\n\nMEMORY FORMAT\n- Each memory line MUST follow this format:\n  @<PokemonName>: <short memory sentence>\n  @@<PokemonName>: <core memory sentence>\n- Use @ for short memory, @@ for core memory.\n- Each Pokémon records events from its own perspective.\n- Short memories = fleeting perceptions; Core memories = impactful events.\n- Memories MUST be written from the perspective of a third-person narrator, describing what happens to the Pokémon \n- Memories should not appear in the dialogue\n- Memories function as a historical log: Pokémon must use past memories to understand the context of future events\n\nACTION FORMAT\n- Each action line MUST follow this format:\n  #<PokemonName>: <action>\n- At the very end, output one action per Pokémon.\n- Use exactly one of:\n  #PokemonName: attack\n  #PokemonName: eat\n  #PokemonName: buff\n  #PokemonName: debuff enemy\n  #PokemonName: sit\n  #PokemonName: protect\n  #PokemonName: idle\n  (fire type) #PokemonName: cook\n  (steel type) #PokemonName: repair\n  (grass type) #PokemonName: grow\n  (ghost type) #PokemonName: shift\n- If no action is needed, ALWAYS use idle.\n\nGENERAL RULES\n1. Each line of dialogue must respect the word and line limits.\n2. Never mix nickname and species; use only one consistently.\n3. Do not invent characters outside Pokémon and the human player.\n4. if not specified in the prompt, the Pokémon should not talk to themselves or speak their thoughts\n5. Always follow the formats exactly; no hyphens or alternative separators.\n6. Friendship, memory, and action sections must appear in this order: Dialogue → Friendship → Memory → Action.\n7. If no action is relevant, always output idle.\n8. Dialogue, friendship, memory, and action content must integrate the [CREATIVEPROMPT] but never break format.\n9. Dialogue must be generated using past memories as context, recalling previous events to explain or justify reactions. "
+}

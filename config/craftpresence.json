@@ -2,7 +2,7 @@
   "_schemaVersion": 7,
   "_lastMCVersionId": 767,
   "generalSettings": {
-    "detectATLauncherInstance": false,
+    "detectATLauncherInstance": true,
     "detectCurseManifest": false,
     "detectMultiMCManifest": false,
     "detectMCUpdaterInstance": false,
@@ -11,7 +11,7 @@
     "detectBiomeData": true,
     "detectDimensionData": true,
     "detectWorldData": true,
-    "clientId": "762726289341677668",
+    "clientId": "1042681781775769610",
     "defaultIcon": "grass",
     "enableJoinRequests": false,
     "preferredClientLevel": 3,
@@ -22,7 +22,23 @@
     "fallbackBiomeIcon": "unknown",
     "biomeData": {
       "default": {
-        "textOverride": "Playing in {biome.name}"
+        "textOverride": "Exploring the {biome.name}",
+        "data": {
+          "enabled": true,
+          "useAsMain": false,
+          "isInstance": false,
+          "activityType": 0,
+          "partyPrivacy": 1,
+          "details": "",
+          "gameState": "",
+          "largeImageKey": "",
+          "largeImageText": "",
+          "smallImageKey": "",
+          "smallImageText": "",
+          "startTimestamp": "",
+          "endTimestamp": "",
+          "buttons": {}
+        }
       }
     }
   },
@@ -30,22 +46,20 @@
     "fallbackDimensionIcon": "unknown",
     "dimensionData": {
       "default": {
-        "textOverride": "In the {dimension.name}"
-      },
-      "overworld": {
+        "textOverride": "In the {dimension.name}",
         "data": {
-          "enabled": false,
-          "useAsMain": true,
+          "enabled": true,
+          "useAsMain": false,
           "isInstance": false,
           "activityType": 0,
           "partyPrivacy": 1,
-          "details": "{player.name} is in The Overworld",
+          "details": "",
           "gameState": "",
-          "largeImageKey": "overworld",
-          "largeImageText": "In the Overworld",
-          "smallImageKey": "mclogo",
-          "smallImageText": "{general.mods} mods installed",
-          "startTimestamp": "{data.general.time}",
+          "largeImageKey": "",
+          "largeImageText": "",
+          "smallImageKey": "",
+          "smallImageText": "",
+          "startTimestamp": "",
           "endTimestamp": "",
           "buttons": {}
         }
@@ -63,7 +77,25 @@
           "largeImageText": "In the Nether",
           "smallImageKey": "mclogo",
           "smallImageText": "{general.mods} mods installed",
-          "startTimestamp": "{data.general.time}",
+          "startTimestamp": "",
+          "endTimestamp": "",
+          "buttons": {}
+        }
+      },
+      "overworld": {
+        "data": {
+          "enabled": false,
+          "useAsMain": true,
+          "isInstance": false,
+          "activityType": 0,
+          "partyPrivacy": 1,
+          "details": "{player.name} is in The Overworld",
+          "gameState": "",
+          "largeImageKey": "overworld",
+          "largeImageText": "In the Overworld",
+          "smallImageKey": "mclogo",
+          "smallImageText": "{general.mods} mods installed",
+          "startTimestamp": "",
           "endTimestamp": "",
           "buttons": {}
         }
@@ -81,7 +113,7 @@
           "largeImageText": "In the End",
           "smallImageKey": "mclogo",
           "smallImageText": "{general.mods} mods installed",
-          "startTimestamp": "{data.general.time}",
+          "startTimestamp": "",
           "endTimestamp": "",
           "buttons": {}
         }
@@ -94,7 +126,7 @@
     "fallbackServerMotd": "A Minecraft Server",
     "serverData": {
       "default": {
-        "textOverride": "Playing on {server.motd.raw}",
+        "textOverride": "{server.message}",
         "data": {
           "enabled": true,
           "useAsMain": true,
@@ -102,12 +134,12 @@
           "activityType": 0,
           "partyPrivacy": 1,
           "details": "Playing on {server.name} with {server.players.current} players",
-          "gameState": "Playing online",
-          "largeImageKey": "mclogonew",
-          "largeImageText": "It's Minecraft {general.version}, but modded",
-          "smallImageKey": "https://skinatar.firstdark.dev/avatar/{getOrDefault(player.uuid.short, player.name)}",
-          "smallImageText": "{player.name}",
-          "startTimestamp": "{data.general.time}",
+          "gameState": "Playing Online",
+          "largeImageKey": "{server.icon}",
+          "largeImageText": "Cobblemon Fabric {general.version}",
+          "smallImageKey": "mclogo",
+          "smallImageText": "{general.mods} mods installed",
+          "startTimestamp": "",
           "endTimestamp": "",
           "buttons": {}
         }
@@ -125,13 +157,13 @@
         "isInstance": false,
         "activityType": 0,
         "partyPrivacy": 1,
-        "details": "{player.name} is currently lazy",
-        "gameState": "Chilling in the menu",
-        "largeImageKey": "mclogonew",
-        "largeImageText": "It's Minecraft {general.version}, but modded",
-        "smallImageKey": "https://skinatar.firstdark.dev/avatar/{getOrDefault(player.uuid.short, player.name)}",
-        "smallImageText": "{player.name}",
-        "startTimestamp": "{data.general.time}",
+        "details": "{player.name} is deciding a game mode",
+        "gameState": "In the Main Menu",
+        "largeImageKey": "cobblemon_icon",
+        "largeImageText": "Cobblemon Fabric {general.version}",
+        "smallImageKey": "mclogo",
+        "smallImageText": "{general.mods} mods installed",
+        "startTimestamp": "",
         "endTimestamp": "",
         "buttons": {}
       }
@@ -144,19 +176,35 @@
         "isInstance": false,
         "activityType": 0,
         "partyPrivacy": 1,
-        "details": "Minecraft is loading",
+        "details": "Cobblemon is loading",
         "gameState": "Game Starting...",
-        "largeImageKey": "mclogonew",
-        "largeImageText": "It's Minecraft {general.version}, but modded",
+        "largeImageKey": "cobblemon_icon",
+        "largeImageText": "Cobblemon Fabric {general.version}",
         "smallImageKey": "mclogo",
         "smallImageText": "{general.mods} mods installed",
-        "startTimestamp": "{data.general.time}",
+        "startTimestamp": "",
         "endTimestamp": "",
         "buttons": {}
       }
     },
     "lanData": {
-      "textOverride": "Playing on a LAN Server"
+      "textOverride": "Playing on a LAN Server",
+      "data": {
+        "enabled": true,
+        "useAsMain": false,
+        "isInstance": false,
+        "activityType": 0,
+        "partyPrivacy": 1,
+        "details": "",
+        "gameState": "",
+        "largeImageKey": "",
+        "largeImageText": "",
+        "smallImageKey": "",
+        "smallImageText": "",
+        "startTimestamp": "",
+        "endTimestamp": "",
+        "buttons": {}
+      }
     },
     "singleplayerData": {
       "textOverride": "Playing Singleplayer",
@@ -166,35 +214,19 @@
         "isInstance": false,
         "activityType": 0,
         "partyPrivacy": 1,
-        "details": "Currently In {dimension.name}",
-        "gameState": "Playing lonely mode",
-        "largeImageKey": "mclogonew",
-        "largeImageText": "It's Minecraft {general.version}, but modded",
-        "smallImageKey": "https://skinatar.firstdark.dev/avatar/{getOrDefault(player.uuid.short, player.name)}",
-        "smallImageText": "{player.name}",
-        "startTimestamp": "{data.general.time}",
+        "details": "{player.name} is on a Pokémon journey",
+        "gameState": "Playing Solo",
+        "largeImageKey": "cobblemon_icon",
+        "largeImageText": "Cobblemon Fabric {general.version}",
+        "smallImageKey": "mclogo",
+        "smallImageText": "{general.mods} mods installed",
+        "startTimestamp": "",
         "endTimestamp": "",
         "buttons": {}
       }
     },
     "realmData": {
-      "textOverride": "Playing on {server.motd.raw}",
-      "data": {
-        "enabled": true,
-        "useAsMain": true,
-        "isInstance": false,
-        "activityType": 0,
-        "partyPrivacy": 1,
-        "details": "Playing on {server.name}",
-        "gameState": "Playing on a Realm",
-        "largeImageKey": "mclogonew",
-        "largeImageText": "It's Minecraft {general.version}, but modded",
-        "smallImageKey": "https://skinatar.firstdark.dev/avatar/{getOrDefault(player.uuid.short, player.name)}",
-        "smallImageText": "{player.name}",
-        "startTimestamp": "{data.general.time}",
-        "endTimestamp": "",
-        "buttons": {}
-      }
+      "textOverride": "Playing on {server.motd.raw}"
     }
   },
   "advancedSettings": {
@@ -209,82 +241,26 @@
     "guiSettings": {
       "fallbackGuiIcon": "unknown",
       "guiData": {
-        "JoinMultiplayerScreen": {
-          "data": {
-            "enabled": true,
-            "useAsMain": true,
-            "isInstance": false,
-            "activityType": 0,
-            "partyPrivacy": 1,
-            "details": "{player.name} is looking for a server",
-            "gameState": "Searching for friends",
-            "largeImageKey": "mclogonew",
-            "largeImageText": "It's Minecraft {general.version}, but modded",
-            "smallImageKey": "https://skinatar.firstdark.dev/avatar/{getOrDefault(player.uuid.short, player.name)}",
-            "smallImageText": "{player.name}",
-            "startTimestamp": "{data.general.time}",
-            "endTimestamp": "",
-            "buttons": {}
-          }
-        },
-        "LevelLoadingScreen": {
-          "data": {
-            "enabled": true,
-            "useAsMain": true,
-            "isInstance": false,
-            "activityType": 0,
-            "partyPrivacy": 1,
-            "details": "{player.name} is joining a game",
-            "gameState": "Joining Game",
-            "largeImageKey": "mclogonew",
-            "largeImageText": "It's Minecraft {general.version}, but modded",
-            "smallImageKey": "https://skinatar.firstdark.dev/avatar/{getOrDefault(player.uuid.short, player.name)}",
-            "smallImageText": "{player.name}",
-            "startTimestamp": "{data.general.time}",
-            "endTimestamp": "",
-            "buttons": {}
-          }
-        },
         "default": {
-          "textOverride": "In {screen.name}"
-        },
-        "GuiReplayViewer": {
+          "textOverride": "In {screen.name}",
           "data": {
             "enabled": true,
-            "useAsMain": true,
+            "useAsMain": false,
             "isInstance": false,
             "activityType": 0,
             "partyPrivacy": 1,
-            "details": "Browsing Replays",
-            "gameState": "{player.name} is browsing the library",
-            "largeImageKey": "mclogonew",
-            "largeImageText": "It's Minecraft {general.version}, but modded",
-            "smallImageKey": "https://skinatar.firstdark.dev/avatar/{getOrDefault(player.uuid.short, player.name)}",
-            "smallImageText": "{player.name}",
-            "startTimestamp": "{data.general.time}",
+            "details": "",
+            "gameState": "",
+            "largeImageKey": "",
+            "largeImageText": "",
+            "smallImageKey": "",
+            "smallImageText": "",
+            "startTimestamp": "",
             "endTimestamp": "",
             "buttons": {}
           }
         },
-        "DisconnectedScreen": {
-          "data": {
-            "enabled": true,
-            "useAsMain": true,
-            "isInstance": false,
-            "activityType": 0,
-            "partyPrivacy": 1,
-            "details": "{player.name} is looking for a server",
-            "gameState": "Searching for friends",
-            "largeImageKey": "mclogonew",
-            "largeImageText": "It's Minecraft {general.version}, but modded",
-            "smallImageKey": "https://skinatar.firstdark.dev/avatar/{getOrDefault(player.uuid.short, player.name)}",
-            "smallImageText": "{player.name}",
-            "startTimestamp": "{data.general.time}",
-            "endTimestamp": "",
-            "buttons": {}
-          }
-        },
-        "RealmsScreen": {
+        "class_4905": {
           "data": {
             "enabled": true,
             "useAsMain": true,
@@ -293,52 +269,34 @@
             "partyPrivacy": 1,
             "details": "{player.name} is looking for a Realm",
             "gameState": "Browsing Realms",
-            "largeImageKey": "mclogonew",
-            "largeImageText": "It's Minecraft {general.version}, but modded",
-            "smallImageKey": "https://skinatar.firstdark.dev/avatar/{getOrDefault(player.uuid.short, player.name)}",
-            "smallImageText": "{player.name}",
-            "startTimestamp": "{data.general.time}",
+            "largeImageKey": "cobblemon_icon",
+            "largeImageText": "Cobblemon Fabric {general.version}",
+            "smallImageKey": "mclogo",
+            "smallImageText": "{general.mods} mods installed",
+            "startTimestamp": "",
             "endTimestamp": "",
             "buttons": {}
           }
         },
-        "PauseScreen": {
+        "class_500": {
           "data": {
             "enabled": true,
             "useAsMain": true,
             "isInstance": false,
             "activityType": 0,
             "partyPrivacy": 1,
-            "details": "In the Pause Menu",
-            "gameState": "Game Paused",
-            "largeImageKey": "mclogonew",
-            "largeImageText": "It's Minecraft {general.version}, but modded",
-            "smallImageKey": "https://skinatar.firstdark.dev/avatar/{getOrDefault(player.uuid.short, player.name)}",
-            "smallImageText": "{player.name}",
-            "startTimestamp": "{data.general.time}",
+            "details": "{player.name} is browsing servers",
+            "gameState": "Searching for Other Trainers",
+            "largeImageKey": "cobblemon_icon",
+            "largeImageText": "Cobblemon Fabric {general.version}",
+            "smallImageKey": "mclogo",
+            "smallImageText": "{general.mods} mods installed",
+            "startTimestamp": "",
             "endTimestamp": "",
             "buttons": {}
           }
         },
-        "GuiReplayOverlay": {
-          "data": {
-            "enabled": true,
-            "useAsMain": true,
-            "isInstance": false,
-            "activityType": 0,
-            "partyPrivacy": 1,
-            "details": "Editing a video",
-            "gameState": "{player.name} is reviewing footage",
-            "largeImageKey": "mclogonew",
-            "largeImageText": "It's Minecraft {general.version}, but modded",
-            "smallImageKey": "https://skinatar.firstdark.dev/avatar/{getOrDefault(player.uuid.short, player.name)}",
-            "smallImageText": "{player.name}",
-            "startTimestamp": "{data.general.time}",
-            "endTimestamp": "",
-            "buttons": {}
-          }
-        },
-        "ReceivingLevelScreen": {
+        "class_434": {
           "data": {
             "enabled": true,
             "useAsMain": true,
@@ -346,30 +304,30 @@
             "activityType": 0,
             "partyPrivacy": 1,
             "details": "{player.name} is joining a game",
-            "gameState": "Joining Game",
-            "largeImageKey": "mclogonew",
-            "largeImageText": "It's Minecraft {general.version}, but modded",
-            "smallImageKey": "https://skinatar.firstdark.dev/avatar/{getOrDefault(player.uuid.short, player.name)}",
-            "smallImageText": "{player.name}",
-            "startTimestamp": "{data.general.time}",
+            "gameState": "Joining Game...",
+            "largeImageKey": "cobblemon_icon",
+            "largeImageText": "Cobblemon Fabric {general.version}",
+            "smallImageKey": "mclogo",
+            "smallImageText": "{general.mods} mods installed",
+            "startTimestamp": "",
             "endTimestamp": "",
             "buttons": {}
           }
         },
-        "GuiVideoRenderer": {
+        "class_3928": {
           "data": {
             "enabled": true,
             "useAsMain": true,
             "isInstance": false,
             "activityType": 0,
             "partyPrivacy": 1,
-            "details": "Exporting a video with {replaymod.time.remaining} left",
-            "gameState": "Rendering {replaymod.frames.current}/{replaymod.frames.total} frames",
-            "largeImageKey": "mclogonew",
-            "largeImageText": "It's Minecraft {general.version}, but modded",
-            "smallImageKey": "https://skinatar.firstdark.dev/avatar/{getOrDefault(player.uuid.short, player.name)}",
-            "smallImageText": "{player.name}",
-            "startTimestamp": "{data.general.time}",
+            "details": "{player.name} is joining a game",
+            "gameState": "Joining Game...",
+            "largeImageKey": "cobblemon_icon",
+            "largeImageText": "Cobblemon Fabric {general.version}",
+            "smallImageKey": "mclogo",
+            "smallImageText": "{general.mods} mods installed",
+            "startTimestamp": "",
             "endTimestamp": "",
             "buttons": {}
           }
@@ -383,18 +341,50 @@
       "fallbackEntityIcon": "unknown",
       "targetData": {
         "default": {
-          "textOverride": "Targeting {entity.target.name}"
+          "textOverride": "Targeting {entity.target.name}",
+          "data": {
+            "enabled": true,
+            "useAsMain": false,
+            "isInstance": false,
+            "activityType": 0,
+            "partyPrivacy": 1,
+            "details": "",
+            "gameState": "",
+            "largeImageKey": "",
+            "largeImageText": "",
+            "smallImageKey": "",
+            "smallImageText": "",
+            "startTimestamp": "",
+            "endTimestamp": "",
+            "buttons": {}
+          }
         }
       },
       "ridingData": {
         "default": {
-          "textOverride": "Riding {entity.riding.name}"
+          "textOverride": "Riding {entity.riding.name}",
+          "data": {
+            "enabled": true,
+            "useAsMain": false,
+            "isInstance": false,
+            "activityType": 0,
+            "partyPrivacy": 1,
+            "details": "",
+            "gameState": "",
+            "largeImageKey": "",
+            "largeImageText": "",
+            "smallImageKey": "",
+            "smallImageText": "",
+            "startTimestamp": "",
+            "endTimestamp": "",
+            "buttons": {}
+          }
         }
       }
     },
     "allowEndpointIcons": true,
-    "serverIconEndpoint": "https://api.mcsrvstat.us/icon/{server.address.short}",
-    "playerSkinEndpoint": "https://mc-heads.net/avatar/{getOrDefault(player.uuid.short, player.name)}",
+    "serverIconEndpoint": "https://api.mcsrvstat.us/icon/%1$s",
+    "playerSkinEndpoint": "https://crafatar.com/avatars/%1$s",
     "allowDuplicatePackets": false,
     "maxConnectionAttempts": 10,
     "enableClassGraph": false
@@ -404,7 +394,7 @@
     "stripTranslationColors": false,
     "stripTranslationFormatting": false,
     "stripExtraGuiElements": false,
-    "configKeyCode": 96
+    "configKeyCode": 48
   },
   "displaySettings": {
     "presenceData": {
@@ -413,17 +403,23 @@
       "isInstance": false,
       "activityType": 0,
       "partyPrivacy": 1,
-      "details": "Playing Minecraft",
+      "details": "Playing Cobblemon",
       "gameState": "",
-      "largeImageKey": "mclogonew",
-      "largeImageText": "It's Minecraft {general.version}, but modded",
+      "largeImageKey": "cobblemon_icon",
+      "largeImageText": "Cobblemon Fabric {general.version}",
       "smallImageKey": "mclogo",
       "smallImageText": "{general.mods} mods installed",
       "startTimestamp": "{data.general.time}",
       "endTimestamp": "",
       "buttons": {}
     },
-    "dynamicIcons": {},
+    "dynamicIcons": {
+      "localhost": "https://api.mcsrvstat.us/icon/localhost",
+      "73.24.74.7": "https://api.mcsrvstat.us/icon/73.24.74.7",
+      "Veraxiel": "https://crafatar.com/avatars/1db4f9a387894c739a6c179f8ecf91f1",
+      "cmhistoria.falixsrv.me": "https://api.mcsrvstat.us/icon/cmhistoria.falixsrv.me",
+      "hfk.falix.gg": "https://api.mcsrvstat.us/icon/hfk.falix.gg"
+    },
     "dynamicVariables": {
       "mods": "{general.mods} Mod(s)",
       "player_info_coordinate": "At {player.position.x}, {player.position.z}",

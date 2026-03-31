@@ -1,0 +1,10 @@
+{
+  "style": "ANIMATED",
+  "musicTurnoff": true,
+  "determination": true,
+  "centeredHeart": true,
+  "centeredHeartAnimation": false,
+  "centeredHeartSpeed": 1.0,
+  "backgroundFadeSpeed": 0.1,
+  "dynamicHeart": true
+}
