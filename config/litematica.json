@@ -28,7 +28,7 @@
     "easyPlaceSinglePlayerHandling": true,
     "easyPlaceProtocolVersion": "auto",
     "easyPlaceSwingHand": true,
-    "easyPlaceVanillaReach": true,
+    "easyPlaceVanillaReach": false,
     "entityDataSync": true,
     "entityDataSyncBackup": true,
     "executeRequireHoldingTool": true,
@@ -194,7 +194,7 @@
       "keys": ""
     },
     "schematicEditReplaceAll": {
-      "keys": "LEFT_BRACKET"
+      "keys": ""
     },
     "schematicEditReplaceBlock": {
       "keys": ""
@@ -245,7 +245,7 @@
       "keys": ""
     },
     "toggleAllRendering": {
-      "keys": "M,R"
+      "keys": "C,R"
     },
     "toggleAreaSelectionBoxesRendering": {
       "keys": ""

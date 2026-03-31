@@ -29,11 +29,11 @@
     "flipMainHand": false,
     "autoScaleThreshold": 0.4,
     "overlayScale": 1.0,
-    "overlayAnchorX": 0.0,
+    "overlayAnchorX": 0.5,
     "overlayAnchorY": 0.0,
     "activeTheme": "jade_excalibur:excalibur",
-    "overlayPosX": 0.1734375,
-    "overlayPosY": 0.9861111
+    "overlayPosX": 0.5,
+    "overlayPosY": 1.0
   },
   "formatting": {
     "itemModNameStyle": {
