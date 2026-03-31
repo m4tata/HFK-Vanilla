@@ -14,6 +14,9 @@
     "minecraft:beacon",
     "minecraft:stonecutter",
     "minecraft:grindstone",
-    "minecraft:crafting_table"
+    "minecraft:crafting_table",
+    "vs_eureka:engine",
+    "",
+    ""
   ]
 }
