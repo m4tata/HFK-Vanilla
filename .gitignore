@@ -29,3 +29,17 @@ hs_err_pid7136.log
 /Distant_Horizons_server_data
 /downloads
 /dynamic-resource-pack-cache
+config/libraryferret_1.properties
+config/jade/usernamecache.json
+config/iris.properties
+config/invmove/vanilla.json
+config/invmove/unrecognized.json
+config/invmove/jei.json
+config/invmove/emi.json
+config/invmove/cloth-config.json
+config/invmove.json
+config/fabric/indigo-renderer.properties
+config/continuebutton/config.properties
+config/awesomedungeonocean_1.properties
+config/awesomedungeonnether_1.properties
+config/awesomedungeon_1.properties
