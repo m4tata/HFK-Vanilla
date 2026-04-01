@@ -252,3 +252,5 @@ config/worldedit/schematics/shipwlauncher.schem
 config/worldedit/schematics/shipwredstone.schem
 config/worldedit/schematics/tempelevator.schem
 config/worldedit/sessions/0e98fb84-1d60-472d-a715-a110055af290.json
+minecraftinstance.json
+config/simplytooltips/config.toml
