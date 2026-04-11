@@ -1,5 +1,5 @@
 {
-  "textureId": "fancytoasts:textures/toast/vanilla.png",
+  "textureId": "fancytoasts:config/textures/excalibur.png",
   "animationId": "fancytoasts:animations/toast/standard",
   "soundIds": {
     "TASK": "minecraft:entity.allay.ambient_with_item",
